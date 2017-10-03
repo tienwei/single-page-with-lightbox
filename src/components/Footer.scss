@@ -1,0 +1,35 @@
+.footer {
+  height: 350px;
+  padding: 50px;
+  background: #C7B19C;
+
+  .logo--footer {
+    padding: 0;
+  }
+
+  &__content {
+    margin-top: 30px; 
+    display: flex;
+  }
+
+  &__links {
+    flex: 1;
+    margin: 0;
+    padding-left: 20px;
+
+    li {
+      font-size: 20px;
+      color: #434343;
+      font-weight: bold;
+
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  &__link {
+    color: rgb( 36, 87, 171 );
+    text-decoration: none;
+  }
+}

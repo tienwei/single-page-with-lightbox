@@ -1,0 +1,25 @@
+.text-image-section {
+  display: flex;
+  padding: 60px 120px;
+
+  &__article {
+    flex: 3;
+    padding-right: 50px;
+  }
+
+  &__image {
+    flex: 2;
+  }
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+
+    &__article {
+      flex: 1;
+    }
+
+    &__image {
+      flex: 1;
+    }
+  }
+}

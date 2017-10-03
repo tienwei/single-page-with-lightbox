@@ -1,0 +1,56 @@
+// Variables
+$break-large: 980px;
+
+.article {
+  min-height: 290px;
+  background-color: #E6E6E6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__title {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb( 111, 111, 111 );
+    margin: 0;
+  }
+
+  &__content {
+    margin: 0;
+    font-size: 18px;
+    color: rgb( 139, 139, 139 );
+    font-weight: bold;
+  }
+
+  &:hover {
+    cursor: pointer; 
+  }
+  @media screen and (max-width: 1023px) {
+    margin-top: 50px;
+  }
+}
+
+.article.article--feature {
+  min-height: 333px;
+  @media screen and (min-width: 1024px) {
+    &:nth-of-type(odd) {
+      margin-right: 40px;
+    }
+    &:nth-of-type(even) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.article.article--quicklink {
+  min-height: 280px;
+  @media screen and (min-width: 1024px) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}

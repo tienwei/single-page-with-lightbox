@@ -1,0 +1,22 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #CCCCCC;
+  color: #FFFFFF;
+  padding: 150px 40px;
+
+  &__title {
+    flex: 1;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__applicant {
+    flex: 1;
+    font-size: 35px;
+    margin: 0;
+  }
+}

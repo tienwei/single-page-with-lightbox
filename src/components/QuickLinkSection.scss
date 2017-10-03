@@ -1,0 +1,8 @@
+.quick-link-section {
+  display: flex;
+  padding: 60px 120px;
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
+}
